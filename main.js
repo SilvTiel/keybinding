@@ -5,17 +5,13 @@ let modifier = 15;
 document.addEventListener('DOMContentLoaded', init);
 
 function init(){
-    // let txt = document.getElementById('txt');
-    // txt.addEventListener('keydown', anyKey);
     document.body.addEventListener('keydown', anyKey);
 }
 
 function anyKey(ev){
-    let target = ev.currentTarget;
-    let tag = target.tagName;
-    let char = ev.char || ev.charCode || ev.which;
-    // log(char, tag);
-
+    log(ev);
+    let char = ev.which;
+    // log(char);
 
     switch(char){
         // Div verranderen kleur
